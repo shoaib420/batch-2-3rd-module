@@ -24,7 +24,7 @@ import React from "react";
                    <li>zipCode: {zipCode}</li>
             </ul>
             }
-        </React.Fragment>
+        </React.Fragment              >
     )
 }
 
