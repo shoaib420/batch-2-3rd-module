@@ -1,10 +1,13 @@
 // import About from "./About"
 import Greet from './Component/Greet'
+import Count from './Component/Count'
 import "./App.css"
 function App() {
   // const Name = "Abdullah"
   return (
     <div>
+ <Count />
+
       {/* <About  />
         <h2 style={{backgroundColor:"yellowgreen"}}>
           hello react js
