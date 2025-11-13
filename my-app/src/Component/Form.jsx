@@ -1,18 +1,19 @@
 import React from 'react'
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import { useState } from 'react'
 
 const Form = () => {
     const [name , setName] = useState("");
     const [email , setEmail] = useState("");
-   const refpassword  = useRef()
+    const [password , setpassword] = useState("");
+//    const refpassword  = useRef()
 //    const invalidForm = name && email  && password 
 
-const invalidForm = name  && email  && refpassword.current?.value 
+const invalidForm = name  && email  && password
 
     const onSubmit =(event)=>{
          event.preventDefault()
-         console.log("event", event,{password:refpassword.current?.value, name, email, invalidForm})
+         console.log("event", event,{password, name, email, invalidForm})
     }
 
     console.log("render")
@@ -40,7 +41,11 @@ const invalidForm = name  && email  && refpassword.current?.value
                 <div>
                  <label htmlFor="password">password </label>
                 <input type="password" required name="" id="password" placeholder='Enter your password '
-                ref={refpassword}
+                value={password}
+                onChange={(e)=> {
+                    console.log(e.target.value)
+                    setpassword(e.target.value)
+                }}
                 
                 />
                </div>
