@@ -4,11 +4,13 @@ import Count from './Component/Count'
 import "./App.css"
 import Form from './Component/Form'
 import { Todo } from './Component/Todo'
+import Post from './Component/Post'
 function App() {
   // const Name = "Abdullah"
   return (
     <div>
-      <Form />
+      <Post />
+      {/* <Form /> */}
  {/* <Count /> */}
 
       {/* <About  />
@@ -26,7 +28,7 @@ function App() {
       {/* <Greet name="ali" age={23}  location={{ city: "ghotki", country: "pakistan", street: "23, aabc", zipCode: 1234 }} /> */}
       {/* <Greet name="wasif" age={23} /> */}
       {/* <Greet name="javeed" age={23} location={{ city: "ghotki", country: "pakistan", street: "23, aabc", zipCode: 1234 }} /> */}
-      <Todo />
+      {/* <Todo /> */}
     </div>
   )
 }
